@@ -75,7 +75,7 @@ pres_date = l_last_songs[0][0].split('T')[0]
 
 # split pres_date to reorder all pretty-like
 l_pres_date = pres_date.split('-')
-pres_date = "{0}/{1}/{2}".format(l_pres_date[1], l_pres_date[2].lstrip('0'), l_pres_date[0])
+pres_date = "{0}/{1}/{2}".format(l_pres_date[1].lstrip('0'), l_pres_date[2].lstrip('0'), l_pres_date[0])
 l_last_song_titles = [song[2] for song in l_last_songs]
 
 leader_and_date = [get_leader_name(), pres_date]

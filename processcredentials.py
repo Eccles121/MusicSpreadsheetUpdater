@@ -6,7 +6,7 @@ from oauth2client.client import SignedJwtAssertionCredentials
 
 class Credentials:
     mac_user = pwd.getpwuid(os.getuid())[0]
-    __jsonPath = '/Users/{0}/Documents/spreadsheet_update_credentials.json'.format(mac_user)
+    __jsonPath = 'spreadsheet_update_credentials.json'
     __json_key = json.load(open(__jsonPath))
     __google_user_email = __json_key['client_email']
     __google_user_password = __json_key['private_key']
@@ -27,4 +27,4 @@ class DB_Paths:
 
 
 class Spreadsheet:
-    spreadsheet_name = 'new'
+    spreadsheet_name = 'SetLists'
