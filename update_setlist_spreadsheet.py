@@ -68,8 +68,6 @@ start_time = time.time()
 
 pres = Presentation(DB_Paths.presentation_manager_db_path)
 
-print pres.get_all_service_items()
-
 l_last_songs = pres.get_latest_songs()
 pres_date = l_last_songs[0][0].split('T')[0]
 
